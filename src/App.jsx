@@ -1,9 +1,9 @@
-import Login from "./assets/components/Auth/Login"
-import EmployeeDashboard from "./assets/components/Dashboard/EmployeeDashboard"
+import EmployeeDashboard from "./components/Dashboard/EmployeeDashboard"
+
 
 
 const App = ()=>{
-
+EmployeeDashboard
   return <>
  {/* <Login/> */}
   <EmployeeDashboard/>
