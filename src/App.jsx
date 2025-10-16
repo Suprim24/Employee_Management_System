@@ -4,7 +4,7 @@ import AdminDashboard from "./components/Dashboard/AdminDashboard";
 import EmployeeDashboard from "./components/Dashboard/EmployeeDashboard";
 import { getLocalStorage, setLocalStorage } from "./utils/localStorage";
 
-const App = () => {
+const App = () => {   
   useEffect(() => {
     
     getLocalStorage()
@@ -29,7 +29,8 @@ const App = () => {
   return (
     <div>
       {!user ? <Login handelLogin={handelLogin} /> : ''}
-     {user == 'admin'? <AdminDashboard/>:<EmployeeDashboard/>}
+      {user == "admin" ? <AdminDashboard /> : ''}
+      {user == "employee" ? <EmployeeDashboard /> : ''}
     </div>
   );
 };
